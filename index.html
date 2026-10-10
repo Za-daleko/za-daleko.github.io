@@ -1,28 +1,163 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Za Daleko</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8f6f1;
-      color: #222;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    h1 {
-      font-size: 60px;
-    }
-    p {
-      font-size: 20px;
-    }
-  </style>
-</head>
+  <title>Stowarzyszenie „Za Daleko” — Przybliżamy (za) dalekie tematy</title>
+  <meta name="description" content="Stowarzyszenie „Za Daleko” — przestrzeń dla historii z podróży, badań i doświadczeń międzykulturowych. Edukujemy, dyskutujemy i skracamy dystans.">
+  <meta name="theme-color" content="#001FC8">
+  <link rel="canonical" href="https://za-daleko.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="Stowarzyszenie „Za Daleko”">
+  <meta property="og:title" content="Stowarzyszenie „Za Daleko” — Przybliżamy (za) dalekie tematy">
+  <meta property="og:description" content="Stowarzyszenie „Za Daleko” — przestrzeń dla historii z podróży, badań i doświadczeń międzykulturowych. Edukujemy, dyskutujemy i skracamy dystans.">
+  <meta property="og:url" content="https://za-daleko.github.io/">
+  <meta property="og:image" content="https://za-daleko.github.io/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo Stowarzyszenia Za Daleko na tle mapy">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/gloock-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/mapa-niebieska-2000.jpg" as="image" media="(min-width: 1001px)">
+  <link rel="preload" href="assets/img/mapa-niebieska-1000.jpg" as="image" media="(min-width: 601px) and (max-width: 1000px)">  <link rel="preload" href="assets/img/mapa-niebieska-pion-900.jpg" as="image" media="(max-width: 600px)">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Stowarzyszenie „Za Daleko”",
+    "url": "https://za-daleko.github.io/",
+    "logo": "https://za-daleko.github.io/assets/icons/favicon-512.png",
+    "email": "stowarzyszeniezadaleko@gmail.com",
+    "taxID": "6793355071",
+    "slogan": "Przybliżamy (za) dalekie tematy | Edukujemy | Dyskutujemy | Skracamy dystans",
+    "sameAs": [
+      "https://www.instagram.com/zadalekopl/",
+      "https://www.facebook.com/stowarzyszeniezadaleko/",
+      "https://www.linkedin.com/company/stowarzyszenie-za-daleko/"
+    ]
+  }
+  </script></head>
 <body>
-  <h1>Za Daleko</h1>
-  <p>Nasza strona internetowa już powstaje!</p>
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+
+  <!-- ===================== NAWIGACJA (taka sama na każdej stronie) ===================== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__bar">
+      <a class="nav__logo" href="index.html" aria-label="Stowarzyszenie Za Daleko — strona główna">
+        <img class="nav__logo-light" src="assets/img/logo-kremowe.png" alt="" width="800" height="219">
+        <img class="nav__logo-dark" src="assets/img/logo-niebieskie.png" alt="" width="800" height="219">
+      </a>
+      <nav aria-label="Menu główne">
+        <button class="burger" type="button" aria-expanded="false" aria-controls="menu">
+          <span class="visually-hidden">Menu</span>
+          <span class="burger__line" aria-hidden="true"></span>
+          <span class="burger__line" aria-hidden="true"></span>
+        </button>
+        <ul class="menu" id="menu">
+          <li><a href="o-nas.html">O nas</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a href="zespol.html">Zespół</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="tresc">
+    <!-- ===================== PIERWSZY EKRAN ===================== -->
+    <section class="hero on-blue" aria-labelledby="h-start">
+      <div class="wrap hero__inner">
+        <h1 class="hero__name" id="h-start">Stowarzyszenie „Za Daleko”</h1>
+        <p class="slogan">
+          <span class="slogan__main"><span class="word" style="--d:.1s">Przybliżamy <span class="slogan__za">(za)</span> dalekie tematy</span></span>
+          <span class="slogan__verbs">
+            <span class="word slogan__sep" style="--d:.5s">|</span>
+            <span class="word" style="--d:.6s">Edukujemy</span>
+            <span class="word slogan__sep" style="--d:.75s">|</span>
+            <span class="word" style="--d:.85s">Dyskutujemy</span>
+            <span class="word slogan__sep" style="--d:1s">|</span>
+            <span class="word" style="--d:1.1s">Skracamy dystans</span>
+          </span>
+        </p>
+        <div class="hero__foot">
+          <div>
+            <div class="scale" aria-hidden="true"><span>za blisko</span><i></i><span>za daleko</span></div>
+          </div>
+          <div class="btns">
+            <a class="btn btn--solid" href="o-nas.html#dzialania">Poznaj nasze działania <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="o-nas.html">O nas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== KIM JESTEŚMY (teksty z content.js: start.manifest) ===================== -->
+    <section class="statement" aria-label="Kim jesteśmy">
+      <div class="wrap statement__grid">
+        <p class="statement__lead rv" data-tresc="start.manifest.glowny">Tworzymy miejsce edukacji, dyskusji i wspólnego odkrywania.</p>
+        <p class="statement__accent rv" data-tresc="start.manifest.akcent">Skracamy dystans.</p>
+        <p class="statement__more rv" data-tresc="start.manifest.dopowiedzenie">Przeciwdziałamy dezinformacji. Wspieramy integrację – konkretnie i bez dystansu.</p>
+      </div>
+    </section>
+
+    <!-- ===================== SPIS PODSTRON ===================== -->
+    <section class="explore" aria-label="Spis podstron">
+      <div class="wrap">
+        <ul class="explore__list">
+          <li class="rv"><a class="explore__link" href="o-nas.html"><span class="explore__n" aria-hidden="true">01</span><span class="explore__title">O nas</span><span class="explore__text">Kim jesteśmy i co robimy.</span><span class="explore__arrow" aria-hidden="true">→</span></a></li>
+          <li class="rv"><a class="explore__link" href="projekty.html"><span class="explore__n" aria-hidden="true">02</span><span class="explore__title">Projekty</span><span class="explore__text">Nasze projekty i inicjatywy.</span><span class="explore__arrow" aria-hidden="true">→</span></a></li>
+          <li class="rv"><a class="explore__link" href="zespol.html"><span class="explore__n" aria-hidden="true">03</span><span class="explore__title">Zespół</span><span class="explore__text">Osoby, które tworzą stowarzyszenie.</span><span class="explore__arrow" aria-hidden="true">→</span></a></li>
+          <li class="rv"><a class="explore__link" href="kontakt.html"><span class="explore__n" aria-hidden="true">04</span><span class="explore__title">Kontakt</span><span class="explore__text">E-mail i media społecznościowe.</span><span class="explore__arrow" aria-hidden="true">→</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== STOPKA (taka sama na każdej stronie) ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html"><img class="footer__logo" src="assets/img/logo-kremowe.png" alt="Stowarzyszenie Za Daleko — strona główna" width="800" height="219" loading="lazy"></a>
+          <p class="footer__slogan">Przybliżamy (za) dalekie tematy | Edukujemy | Dyskutujemy | Skracamy dystans</p>
+        </div>
+        <nav aria-label="Stopka">
+          <h2 class="footer__h">Strona</h2>
+          <ul class="footer__list">
+            <li><a href="o-nas.html">O nas</a></li>
+            <li><a href="projekty.html">Projekty</a></li>
+            <li><a href="zespol.html">Zespół</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="footer__h">Kontakt</h2>
+          <ul class="footer__list" id="stopka-kontakt"></ul>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <p>© <span id="rok">2026</span> Stowarzyszenie „Za Daleko”. Wszelkie prawa zastrzeżone.</p>
+        <p id="stopka-polityka" hidden><a href="#">Polityka prywatności</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <p class="noscript">Aby zobaczyć wszystkie treści strony, włącz obsługę JavaScript w przeglądarce. Kontakt: stowarzyszeniezadaleko@gmail.com</p>
+  </noscript>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
